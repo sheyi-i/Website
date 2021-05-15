@@ -1,0 +1,355 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* introduction page */
+.intro{
+  min-height: 100vh;
+  background-image: url("./components/img/wendyportfolio.jpeg");
+  background-size:cover;
+  background-position: center;
+  padding:15px;
+}
+.intro .intropg {
+ min-height: 100vh;
+}
+.intro .introContent{
+  flex:0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap:wrap ;
+  align-items: center;
+}
+
+.intro .introContent .block{
+  flex: 0 0 100%;
+  max-width:100%;
+  padding-right: 70% ;
+  margin-top: 50px;
+
+}
+
+.intro .introContent .block h1{
+  color: lavenderblush !important;
+  font-size: 50px;
+  font-weight: 600;
+  margin:0;
+  padding:0;
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .12em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+font-family: "Libre Baskerville", serif;
+}
+
+.intro .introContent .block h3{
+  color: lavenderblush;
+
+}
+
+
+.introicons{
+  animation-name: fade-in;
+  animation-duration: 3s;
+  color: lavenderblush;
+
+  
+
+}
+
+@keyframes fade-in{
+  0% {opacity: 0}
+  100% {opacity: 1;}
+}
+
+@keyframes typing{
+  from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+/*About me page*/
+.aboutpg{
+  background-color: lavenderblush;
+  min-height: 100vh;
+
+}
+
+h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .12em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+font-family: "Libre Baskerville", serif;
+
+}
+
+/*Contact*/
+
+.contact{
+  padding:100px 15px;
+  background-color:lavenderblush;
+  min-height: 100vh;
+}
+
+.contact .sectionTitle{
+  left:30%;
+}
+
+.contact .contactForm{
+  margin-top: 10%;
+  background-color:lavenderblush;
+  flex:0 0 100%;
+  max-width: 100%;
+  padding:50px;
+  border:1px solid black;
+}
+
+.contact .contactForm .text{
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.contact .contact .text h2{
+  font-size:26px;
+  font-weight: 600;
+  color:#000000;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.contact .contactForm .col-6{
+  flex:0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+}
+
+.contact .contactForm .col-12{
+  flex:0 0 100%;
+  max-width: 100%;
+}
+
+.contact .contactForm .form-control{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  padding:6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact .contactForm textarea.form-control{
+  height:140px;
+}
+
+.contact .contactForm textarea.form-control ::placeholder{
+  color:#838383
+}
+
+.contact .contactForm .form-control ::placeholder{
+  color:#838383;
+}
+
+.contact .contactForm .button{
+  flex:0 0 100%;
+  max-width: 100%;
+}
+
+.textRight{
+  border-radius: 4px;
+  color:white !important;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  box-shadow: 0px 10px 15px #e8e8e8;
+}
+
+.contact .contactForm .button a:hover{
+  background-color:#000000;
+  columns: #ffffff;
+}
+
+h2{
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+}
+
+@media(max-width:420px){
+  .intro .introContent .block h1{
+      font-size: 30px;
+  }
+  .intro .introContent .block h3{
+    font-size: 20px;
+}
+
+.intro .introContent .block .introicons{
+  font-size: 20px;
+}
+}
+
+@media(max-width:320px){
+  .intro .introContent .block h1{
+      font-size: 25px;
+  }
+  .intro .introContent .block h3{
+    font-size: 15px;
+}
+
+.intro .introContent .block .introicons{
+  font-size: 15px;
+}
+}
+/*
+@media(max-width: 767px){
+  .intro .introContent .block h1{
+      font-size: 40px;
+  }
+  .intro .introContent .block h3{
+      font-size: 25px;
+  }
+  header{
+      padding:15px;
+      position: fixed;
+      background-color: #ffffff;
+      border: none;
+      border-bottom: 1px solid #eeeeee;
+  }
+  header .brand-name {
+      color:#000000;
+  }    
+
+  .row{
+      position: absolute;
+      background-color: #ffffff;
+      width:100%;
+      left:0px;
+      top:60px;
+      padding: 15px;
+      border-top: 1px solid #eeeeee;  
+      display: none;
+  }
+  .row.show{
+      display: block;
+  }
+  header .row ul li{
+      display: block;
+      margin-left: 0;
+  }
+  header .row ul li a{
+      line-height:42px;
+      color: #000000;
+  }
+  header .row ul li a::before{
+      background-color: #febd01;
+  }
+  
+   .projectpg {
+      flex: 0 0 100%;
+      max-width: 100%;
+      position: auto;
+      padding: 8px;
+  } 
+  .contact-us .contact-form{
+      padding: 40px 20px;
+  }
+  .contact-us .contact-form .col-6{
+      flex: 0 0 100%;
+      max-width:100%;
+  }
+}
+
+@media(max-width: 500px){
+  .intro .home-content .block h1{
+      font-size: 30px;
+  }
+  .home .home-content .block h3{
+      font-size: 20px;
+  }
+  .home .home-content .block{
+      padding-left: 20px;
+  }
+  .portfolio .portfolio-gallery .item{
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+@media(min-width: 375px){
+  .projectpg{
+    min-height: 100vh;
+
+
+  }
+} */

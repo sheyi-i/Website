@@ -1,0 +1,21 @@
+.projectpg {
+  background-color: lavenderblush;
+    height: 100%;
+    padding-top: 5%;
+  
+    font-family: "Libre Baskerville", serif;
+   
+  }
+
+  .projectcard{
+    width: 18 rem;
+    margin-left: 10%;
+  }
+
+  button{
+    margin-left: 10% !important;
+  }
+
+  .projecttitle{
+    margin-bottom: 5%;
+  }
